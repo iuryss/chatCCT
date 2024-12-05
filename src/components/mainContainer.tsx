@@ -1,5 +1,6 @@
 import Header from './header'
 import '../styles/mainContainer.css'
+import Introduction from './introduction'
 
 function MainContainer(){
     return (
@@ -7,7 +8,7 @@ function MainContainer(){
             <div className="container">
                 <Header />
                 <div className="main">
-                    
+                    <Introduction />
                 </div>
             </div>
         </>
