@@ -1,7 +1,12 @@
 import '../styles/introduction.css'
 
+interface IntroductionProps {
+    onNext: () => void; 
+}
 
-function Introduction(){
+
+
+function Introduction({ onNext }: IntroductionProps){
     return (
         <>
             <div className="container">
@@ -9,9 +14,7 @@ function Introduction(){
                     <p>Tem alguma dúvida sobre o curso?</p>
                     <p>Converse comigo!</p>
                 </div>
-
-                <button>Próximo <div className="img"></div></button>
-
+                <button onClick={onNext}>Próximo <div className="img"></div></button>
             </div>
         </>
     );
