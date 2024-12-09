@@ -14,9 +14,9 @@ function MainContainer(){
                 <Header />
                 <div className="main">
                     {currentComponent === 'Introduction' && (
-                        <Introduction onNext={() => setCurrentComponent('Identification')} />
+                        <Introduction key="Introduction" onNext={() => setCurrentComponent('Identification')} />
                     )}
-                    {currentComponent === 'Identification' && <Identification />}
+                    {currentComponent === 'Identification' && <Identification key="Identification" />}
                 </div>
             </div>
         </>

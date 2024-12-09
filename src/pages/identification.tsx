@@ -5,7 +5,7 @@ function Identification(){
         <>
             <div className="container">
                 <div className="top">
-                    <button>Sair</button>
+                    <button>Sair <div className="img"></div></button>
                 </div>
                 <div className="midlle">
                     <p>Deseja se identificar?</p>

@@ -6,11 +6,80 @@
     width: 95%;
     background-color: #fff;
     padding: 10px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.middle{
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.top button{
+    margin-right: 20px;
+    background-color: rgb(39, 39, 255);
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.top button .img{
+    background: url(../img/seta-direita.png);
+    background-size: cover;
+    height: 18px;
+    width: 18px;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #f9f7f7;
+    color: black;
+}
+
+.top button:hover .img{
+    background: url(../img/seta-direita-preta.png);
+    background-size: cover;
+}
+
+.midlle p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.bottom button{
+    background-color: blue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.bottom button:hover{
+    background-color: #f9f7f7;
+    color: black;
 }
