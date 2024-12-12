@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+button{
+    background-color: blue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #f9f7f7;
+    color: black;
+}
+
+button .img{
+    height: 20px;
+    width: 20px;
+    background: url(../img/seta-direita.png);
+    background-size: cover;
+    transition:  .5s;
+}
+
+button:hover .img{
+    background: url(../img/seta-direita-preta.png);
+    background-size: cover;
+}

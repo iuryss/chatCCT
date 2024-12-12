@@ -15,42 +15,9 @@
     width: 100%;
     display: flex;
     justify-content: end;
-}
-
-.top button{
-    margin-right: 20px;
-    background-color: rgb(39, 39, 255);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 10px;
-    width: 200px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between; 
+    height: 10%;
     align-items: center;
-    padding: 0 20px;
-    transition: .5s;
-    cursor: pointer;
-}
 
-.top button .img{
-    background: url(../img/seta-direita.png);
-    background-size: cover;
-    height: 18px;
-    width: 18px;
-    transition: .5s;
-}
-
-button:hover{
-    background-color: #f9f7f7;
-    color: black;
-}
-
-.top button:hover .img{
-    background: url(../img/seta-direita-preta.png);
-    background-size: cover;
 }
 
 .midlle p {
@@ -77,6 +44,7 @@ button:hover{
     height: 60px;
     transition: .5s;
     cursor: pointer;
+    text-align: center;
 }
 
 .bottom button:hover{

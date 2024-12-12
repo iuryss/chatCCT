@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
 
 .container{
-    height: 80%;
+    height: 95%;
     width: 95%;
     border-radius: 35px;
     background: none;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
 }
 
 .introduction{
@@ -28,40 +28,10 @@
     font-weight: 700;
 }   
 
-button{
-    position: absolute;
-    right: 80px;
-    bottom: 100px;
-    background-color: blue;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    padding-left: 20px;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 20px;
-    width: 200px;
-    height: 60px;
-    transition: .5s;
+.bottom{
+    height: 20%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: #f9f7f7;
-    color: black;
-}
-
-button .img{
-    height: 20px;
-    width: 20px;
-    background: url(../img/seta-direita.png);
-    background-size: cover;
-    transition:  .5s;
-}
-
-button:hover .img{
-    background: url(../img/seta-direita-preta.png);
-    background-size: cover;
-}
+    align-items: end;
+    justify-content: end;
+}   

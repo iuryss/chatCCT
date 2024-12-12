@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+.questionButton{
+    width: 180px;
+    height: 30px;
+    background-color: rgb(203, 203, 203);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+.questionButton:hover{
+    color: #fff;
+    background-color: blue;
+}
