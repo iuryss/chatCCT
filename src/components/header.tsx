@@ -4,11 +4,8 @@ function Header(){
     return (
         <>
             <header className='topo'>
-                <div className='logo'>
-                    <img src="" alt="Logo" />
-                    <a href="#">Unifor</a>
-                </div>
-                <a href="#" className='nome'>Chat CCT</a>
+                <div className="imgLogo"></div>
+                <div className="imgName"></div>
             </header>
         </>
     )

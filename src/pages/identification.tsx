@@ -1,19 +1,24 @@
 import '../styles/identification.css'
 import LeftButton from '../components/LeftButton';
 
-function Identification(){
+interface IdentificationProps{
+    onBack: () => void,
+    onNext: () => void,
+    jumpNext: () => void
+}
+function Identification({onBack, onNext, jumpNext}: IdentificationProps){
     return (
         <>
-            <div className="container">
-                <div className="top">
-                    <LeftButton />
+            <div className="idetificationContainer">
+                <div className="idetificationTop">
+                    <LeftButton onBack={onBack}/>
                 </div>
-                <div className="midlle">
+                <div className="idetificationMidlle">
                     <p>Deseja se identificar?</p>
                 </div>
-                <div className="bottom">
-                    <button>Sim</button>
-                    <button>Não</button>
+                <div className="idetificationBottom">
+                    <button className='idetificationButton' onClick={onNext}>Sim</button>
+                    <button className='idetificationButton' onClick={jumpNext}>Não</button> 
                 </div>
             </div>
         </>

@@ -1,37 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
 
-.container{
-    height: 95%;
-    width: 95%;
-    border-radius: 35px;
+
+.introductioContainer{
     background: none;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .introduction{
-    background-color: #fff;
-    height: 80%;
+    background-color: #ffffff;
     width: 100%;
-    border-radius: 35px;
+    height: 70%;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+    color: #0B0B0B;
+}   
+
 
 .introduction p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-family: 'Satoshi-Bold', sans-serif;
     font-weight: 700;
-}   
+    font-size: 45px;
+    text-align: center;
+}
 
-.bottom{
-    height: 20%;
+.introductionBottom{
     width: 100%;
     display: flex;
-    align-items: end;
     justify-content: end;
-}   
+}
+
+.moemaIntroduction{
+    background: url(../img/emaDeitada.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 70%;
+    width: 40%;
+    bottom: 30px;
+    left: 120px;
+}

@@ -1,9 +1,14 @@
 import '../styles/NextButton.css';
 
-function NextButton(){
+interface NextButtonProps{
+    onNext: () => void; 
+}
+
+
+function NextButton({onNext}: NextButtonProps){
     return (
         <>
-            <button>Próximo <div className="img"></div></button>
+            <button onClick={onNext}>Próximo <div className="img"></div></button>
         </>
     );
 }

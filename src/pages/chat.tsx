@@ -1,16 +1,20 @@
 import '../styles/chat.css';
 import LeftButton from '../components/LeftButton';
 import QuestionButton from '../components/QuestionButton';
-function Chat(){
+
+interface chatProps{
+    onBack: () => void
+}
+function Chat({onBack}: chatProps){
     return(
         <>
-            <div className="container">
-                <div className="top">
-                    <div className="left">
-                        <LeftButton />
+            <div className="chatContainer">
+                <div className="chatTop">
+                    <div className="chatLeft">
+                        <LeftButton onBack={onBack}/>
                     </div>
 
-                    <div className="question">
+                    <div className="chatQuestion">
                         <input type="text" value='Sua dúvida está dentro de algum desses tópicos?' readOnly id='firstQuestion'/>
                         <div className="communsquestions">
                             <QuestionButton text='Frequência'/>
@@ -19,7 +23,7 @@ function Chat(){
                         </div>
                     </div>
                 </div>
-                <div className="bottom">
+                <div className="chatBottom">
                     <input type="text" placeholder='Digite a sua pergunta:' id="usersQuestions" />
                     <button className='sender'></button>
                 </div>

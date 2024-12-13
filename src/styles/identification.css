@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
 
-
-.container{
-    height: 95%;
-    width: 95%;
+.idetificationContainer{
+    height: 100%;
+    width: 100%;
     background-color: #fff;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.top{
+.idetificationTop{
     width: 100%;
     display: flex;
     justify-content: end;
@@ -19,23 +19,28 @@
     align-items: center;
 
 }
+.idetificationMidlle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-.midlle p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+.idetificationMidlle p {
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: 50px;
     font-weight: 500;
 }
 
-.bottom{
+.idetificationBottom{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
 
-.bottom button{
+.idetificationBottom .idetificationButton{
     background-color: blue;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Satoshi-Bold', sans-serif;
     font-weight: 500;
     font-size: 25px;
     color: #fff;
@@ -44,10 +49,12 @@
     height: 60px;
     transition: .5s;
     cursor: pointer;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bottom button:hover{
+.idetificationBottom .idetificationButton:hover{
     background-color: #f9f7f7;
     color: black;
 }

@@ -1,9 +1,13 @@
 import '../styles/LeftButton.css';
 
-function LeftButton(){
+interface LeftButtonProps{
+    onBack: () => void
+}
+
+function LeftButton({onBack}: LeftButtonProps){
     return(
         <>
-            <button className='sair'>Sair <div className="img"></div></button>
+            <button onClick={onBack} className='sair'>Sair <div className="img"></div></button>
         </>
     );
     
